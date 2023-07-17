@@ -180,7 +180,9 @@ def main():
                 search_button_clicked = True
 
     # Create chat input for user question
-    if prompt := st.chat_input("Ask a question about this company"):
+
+    prompt = st.chat_input("Ask a question about this company")
+    if prompt:
         st.session_state.messages.append({"role": "user", "content": prompt})
         with st.chat_message("user"):
             st.markdown(prompt)
