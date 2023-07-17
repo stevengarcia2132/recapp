@@ -28,7 +28,6 @@ isodate==0.6.1
 Jinja2==3.1.2
 jsonschema==4.17.3
 langchain==0.0.27
-langchainplus-sdk==0.0.20
 lxml==4.9.3
 markdown-it-py==3.0.0
 MarkupSafe==2.1.3
