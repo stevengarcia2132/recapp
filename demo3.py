@@ -31,7 +31,7 @@ os.environ['DROPBOX_TOKEN'] = 'sl.BiDyeLJ-kbesEp8LVHea60i1O1PsNawgO7Y3EBrcDtmU_L
 
 
 # Set environment variables
-os.environ["OPENAI_API_KEY"] ="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"
+os.environ["OPENAI_API_KEY"] =st.secrets["OPENAI_API_KEY"]
 connection_string = "DefaultEndpointsProtocol=https;AccountName=hiaistorage;AccountKey=Ou24UdNkdIVikn99RUiuWURdOdZ15/sFWiuZA0Pbof3mqDeRlwzPgnSLmaMJtb05xad2qzpB6O/++AStHscqiQ==;EndpointSuffix=core.windows.net"
 
 def process_Company(company):
