@@ -6,7 +6,7 @@ import re
 import time
 from azure.storage.blob import BlobServiceClient
 from PyPDF2 import PdfReader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import  FAISS
 from langchain.chat_models import ChatOpenAI
@@ -69,7 +69,7 @@ def get_pdf_text(pdf_docs):
 
 # Function to split text into chunks
 def get_text_chunks(text):
-    text_splitter = RecursiveCharacterTextSplitter(
+    text_splitter = CharacterTextSplitter(
         chunk_size=10000,
         chunk_overlap=4000,
         length_function=len
