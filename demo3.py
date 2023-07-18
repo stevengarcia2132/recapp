@@ -13,7 +13,6 @@ from langchain.chat_models import ChatOpenAI
 from langchain import PromptTemplate
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
-from pptGen import extract_challenges, generate_powerpoint_slide, extract_challenge_explanations, extract_solutions, extract_solution_explanations, upload_to_azure_blob, upload_to_dropbox, generate_sas_url, generate_and_upload_presentation, check_preview_download_buttons, create_url_link
 from langchain.callbacks import get_openai_callback
 
 
